@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aincrad.akasztfa.MainActivity">
 
+    <Button
+        android:id="@+id/button_Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:background="@drawable/buttonbackround"
+        android:layout_alignTop="@+id/button_Minus"
+        android:layout_toRightOf="@+id/button_Minus"
+        android:layout_toEndOf="@+id/button_Minus"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/button_Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:background="@drawable/buttonbackround"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
     <TextView
+        android:id="@+id/textView_Betu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="A"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/button_Plus"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_Tippel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Tippel"
+        android:layout_below="@+id/textView_Betu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/akasztofa13"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_Tippel"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView_Ktalalando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
